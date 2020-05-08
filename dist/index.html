@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Table With Pagination</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold m-10">Starter Kit for Mini Projects</h1>
+    <div class="m-10 p-10 bg-teal-200">
+      <h1 class="text-3xl font-bold text-teal-800">
+        Table with JSON Data and Pagination
+      </h1>
+
+      <div class="mt-10">
+        <table id="table" class="table-auto bg-teal-100 text-teal-800">
+          <thead class="bg-teal-800 text-teal-200">
+            <th class="border border-teal-200 px-4 py-2">UserID</th>
+            <th class="border border-teal-200 px-4 py-2">ID</th>
+            <th class="border px-4 py-2">Album</th>
+          </thead>
+          <tbody id="tableContent"></tbody>
+        </table>
+        <div id="pagination-wrapper"></div>
+      </div>
+    </div>
+
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
