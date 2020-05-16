@@ -41,14 +41,14 @@ window.onload = function displayTable() {
       function buildTable() {
         let table = document.querySelector("#tableContent");
         let data = pagination(state.querySet, state.page, state.rows);
-        let myList = data.querySet;
+        let albums = data.querySet;
         let i = 1;
         let row = "";
-        for (i in myList) {
+        for (i in albums) {
           row += `<tr>
-            <td>${myList[i].userId}</td>
-            <td>${myList[i].id}</td>
-            <td>${myList[i].title}</td>
+            <td>${albums[i].userId}</td>
+            <td>${albums[i].id}</td>
+            <td>${albums[i].title}</td>
             </tr>`;
         }
         table.innerHTML = row;
